@@ -3,12 +3,12 @@ def encoder(password):
     for i in range(len(password)):
         password_integer = int(password[i]) + 3
         encoded_password += str(password_integer)[-1]
-
     return encoded_password
 
 
 def decode(password):
     pass
+
 
 def main():
     while True:
@@ -18,13 +18,13 @@ def main():
         print("2. Decode")
         print("3. Quit")
         print()
-        Choice = int(input("do you want to encode, decode or quit?"))
-        if Choice == 1:
+        choice = int(input("do you want to encode, decode or quit?"))
+        if choice == 1:
             password = input('What is your password?')
             print(encoder(password))
-        elif Choice == 2:
+        elif choice == 2:
             print('This is for the other person')
-        elif Choice == 3:
+        elif choice == 3:
             break
 
 
