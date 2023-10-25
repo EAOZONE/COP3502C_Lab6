@@ -12,18 +12,18 @@ def decode(password):
 
 def main():
     while True:
-        print("Menu")
-        print("-"*7)
-        print("1. Encode")
-        print("2. Decode")
-        print("3. Quit")
+        print('Menu')
+        print('-' * 9)
+        print('1. Encode')
+        print('2. Decode')
+        print('3. Quit')
         print()
-        choice = int(input("do you want to encode, decode or quit?"))
+        choice = int(input('Do you want to encode, decode or quit? '))
         if choice == 1:
-            password = input('What is your password?')
+            password = input('What is your password? ')
             print(encoder(password))
         elif choice == 2:
-            print('This is for the other person')
+            print('This is for the other person ')
         elif choice == 3:
             break
 
