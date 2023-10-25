@@ -7,6 +7,9 @@ def encoder(password):
     return encoded_password
 
 
+def decode(password):
+    pass
+
 def main():
     while True:
         print("Menu")
@@ -20,7 +23,7 @@ def main():
             password = input('What is your password?')
             print(encoder(password))
         elif Choice == 2:
-            print("This is where decode goes")
+            print('This is for the other person')
         elif Choice == 3:
             break
 
